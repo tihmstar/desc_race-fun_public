@@ -7,6 +7,8 @@
 
 #import "ViewController.h"
 
+void desc_race(void);
+
 @interface ViewController ()
 
 @end
@@ -15,6 +17,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    desc_race();
     // Do any additional setup after loading the view.
 }
 
