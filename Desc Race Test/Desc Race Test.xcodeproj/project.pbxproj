@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		87B1D51F27D35EA100E05EEB /* KernelRW.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 87B1D51D27D35EA100E05EEB /* KernelRW.cpp */; };
+		87B1D52027D35EA100E05EEB /* libgeneral_exception.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 87B1D51E27D35EA100E05EEB /* libgeneral_exception.cpp */; };
+		87B1D52827D3603100E05EEB /* stage3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 87B1D52727D3603100E05EEB /* stage3.cpp */; };
 		F17054DB27D1EA6100D9CDB7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F17054DA27D1EA6100D9CDB7 /* AppDelegate.m */; };
 		F17054DE27D1EA6100D9CDB7 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F17054DD27D1EA6100D9CDB7 /* SceneDelegate.m */; };
 		F17054E127D1EA6100D9CDB7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F17054E027D1EA6100D9CDB7 /* ViewController.m */; };
@@ -21,6 +24,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		87B1D51C27D35EA100E05EEB /* KernelRW.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = KernelRW.hpp; sourceTree = "<group>"; };
+		87B1D51D27D35EA100E05EEB /* KernelRW.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KernelRW.cpp; sourceTree = "<group>"; };
+		87B1D51E27D35EA100E05EEB /* libgeneral_exception.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = libgeneral_exception.cpp; sourceTree = "<group>"; };
+		87B1D52127D35EEC00E05EEB /* macros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = macros.h; sourceTree = "<group>"; };
+		87B1D52227D35F2100E05EEB /* libgeneral_exception.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = libgeneral_exception.hpp; sourceTree = "<group>"; };
+		87B1D52627D3603100E05EEB /* stage3.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = stage3.h; sourceTree = "<group>"; };
+		87B1D52727D3603100E05EEB /* stage3.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = stage3.cpp; sourceTree = "<group>"; };
 		F17054D627D1EA6100D9CDB7 /* Desc Race Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Desc Race Test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F17054D927D1EA6100D9CDB7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F17054DA27D1EA6100D9CDB7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -53,6 +63,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		87B1D51B27D35E8700E05EEB /* common */ = {
+			isa = PBXGroup;
+			children = (
+				87B1D51C27D35EA100E05EEB /* KernelRW.hpp */,
+				87B1D51D27D35EA100E05EEB /* KernelRW.cpp */,
+				87B1D52127D35EEC00E05EEB /* macros.h */,
+				87B1D52227D35F2100E05EEB /* libgeneral_exception.hpp */,
+				87B1D51E27D35EA100E05EEB /* libgeneral_exception.cpp */,
+			);
+			path = common;
+			sourceTree = "<group>";
+		};
 		F17054CD27D1EA6100D9CDB7 = {
 			isa = PBXGroup;
 			children = (
@@ -73,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				F17054F227D1EA8C00D9CDB7 /* exploit */,
+				87B1D51B27D35E8700E05EEB /* common */,
 				F17054D927D1EA6100D9CDB7 /* AppDelegate.h */,
 				F17054DA27D1EA6100D9CDB7 /* AppDelegate.m */,
 				F17054DC27D1EA6100D9CDB7 /* SceneDelegate.h */,
@@ -92,12 +115,14 @@
 			isa = PBXGroup;
 			children = (
 				F170550727D1EB3800D9CDB7 /* iokit.h */,
-				F17054FF27D1EAAC00D9CDB7 /* desc_race.c */,
 				F17054FE27D1EAAC00D9CDB7 /* desc_race.h */,
+				F17054FF27D1EAAC00D9CDB7 /* desc_race.c */,
 				F17054FD27D1EAAC00D9CDB7 /* LICENSE */,
 				F170550027D1EAAC00D9CDB7 /* README.md */,
-				F170550127D1EAAC00D9CDB7 /* spray_stuff.c */,
 				F170550227D1EAAC00D9CDB7 /* spray_stuff.h */,
+				F170550127D1EAAC00D9CDB7 /* spray_stuff.c */,
+				87B1D52627D3603100E05EEB /* stage3.h */,
+				87B1D52727D3603100E05EEB /* stage3.cpp */,
 			);
 			path = exploit;
 			sourceTree = "<group>";
@@ -174,8 +199,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				F17054E127D1EA6100D9CDB7 /* ViewController.m in Sources */,
+				87B1D51F27D35EA100E05EEB /* KernelRW.cpp in Sources */,
 				F170550427D1EAAC00D9CDB7 /* desc_race.c in Sources */,
 				F17054DB27D1EA6100D9CDB7 /* AppDelegate.m in Sources */,
+				87B1D52827D3603100E05EEB /* stage3.cpp in Sources */,
+				87B1D52027D35EA100E05EEB /* libgeneral_exception.cpp in Sources */,
 				F17054EC27D1EA6200D9CDB7 /* main.m in Sources */,
 				F170550627D1EAAC00D9CDB7 /* spray_stuff.c in Sources */,
 				F17054DE27D1EA6100D9CDB7 /* SceneDelegate.m in Sources */,
