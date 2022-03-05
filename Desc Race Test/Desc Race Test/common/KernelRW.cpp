@@ -17,7 +17,7 @@ static uint64_t off_task_itk_space = 0x330;
 static uint64_t off_ipc_space_is_table = 0x20;
 static uint64_t size_ipc_entry = 0x18;
 
-static uint64_t off_ipc_port_ip_kobject = 0x68;
+static uint64_t off_ipc_port_ip_kobject = 0x58;
 
 static uint64_t off_IOSurfaceRootUserClient_surfaceClients = 0x118;
 
